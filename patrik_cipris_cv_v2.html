@@ -1,0 +1,129 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+.cv{max-width:680px;margin:0 auto;padding:1.5rem 0;}
+.header{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;padding-bottom:1.25rem;border-bottom:0.5px solid var(--color-border-tertiary);margin-bottom:1.25rem;}
+.avatar{width:56px;height:56px;border-radius:50%;background:var(--color-background-info);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:500;color:var(--color-text-info);flex-shrink:0;}
+.name{font-size:22px;font-weight:500;color:var(--color-text-primary);line-height:1.2;}
+.title{font-size:14px;color:var(--color-text-secondary);margin-top:3px;}
+.contact-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;}
+.contact-item{display:flex;align-items:center;gap:5px;font-size:13px;color:var(--color-text-secondary);}
+.contact-item i{font-size:15px;}
+.section{margin-bottom:1.25rem;}
+.section-title{font-size:11px;font-weight:500;color:var(--color-text-secondary);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.75rem;padding-bottom:6px;border-bottom:0.5px solid var(--color-border-tertiary);}
+.entry{display:grid;grid-template-columns:1fr auto;gap:8px;margin-bottom:.75rem;}
+.entry-title{font-size:15px;font-weight:500;color:var(--color-text-primary);}
+.entry-sub{font-size:13px;color:var(--color-text-secondary);margin-top:2px;}
+.entry-date{font-size:12px;color:var(--color-text-tertiary);white-space:nowrap;padding-top:2px;}
+.entry-desc{font-size:13px;color:var(--color-text-secondary);margin-top:4px;line-height:1.5;grid-column:1/-1;}
+.skills-grid{display:flex;flex-wrap:wrap;gap:8px;}
+.skill-badge{background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:4px 12px;font-size:13px;color:var(--color-text-primary);}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
+@media(max-width:480px){.two-col{grid-template-columns:1fr;}}
+.lang-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+.lang-name{font-size:14px;color:var(--color-text-primary);}
+.dots{display:flex;gap:4px;}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--color-border-secondary);}
+.dot.on{background:var(--color-text-info);}
+</style>
+
+<div class="cv">
+  <div class="header">
+    <div class="avatar">PC</div>
+    <div>
+      <div class="name">Patrik Cipriš</div>
+      <div class="title">Student — Organizacija i informatizacija ureda · TVZ Zagreb</div>
+      <div class="contact-row">
+        <span class="contact-item"><i class="ti ti-map-pin" aria-hidden="true"></i> Zetkan, Vrbovečka Dubrava</span>
+        <span class="contact-item"><i class="ti ti-mail" aria-hidden="true"></i> pcipris@tvz.hr</span>
+        <span class="contact-item"><i class="ti ti-car" aria-hidden="true"></i> Vozačka B</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">O meni</div>
+    <p style="font-size:14px;color:var(--color-text-secondary);line-height:1.6;">Student preddiplomskog stručnog studija na Tehničkom veleučilištu u Zagrebu. Aktivan rukometni sudac s razvijenim sposobnostima donošenja odluka pod pritiskom, organizacije i timske suradnje. Posjedujem vještine rada u MS Officeu, grafičkim alatima i osnove programiranja.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Obrazovanje</div>
+    <div class="entry">
+      <div>
+        <div class="entry-title">Tehničko veleučilište u Zagrebu (TVZ)</div>
+        <div class="entry-sub">Preddiplomski stručni studij · Organizacija i informatizacija ureda</div>
+      </div>
+      <div class="entry-date">2025 – danas</div>
+      <div class="entry-desc">Zagreb, Hrvatska</div>
+    </div>
+    <div class="entry">
+      <div>
+        <div class="entry-title">Srednja škola Vrbovec</div>
+        <div class="entry-sub">Opća gimnazija</div>
+      </div>
+      <div class="entry-date">2021 – 2025</div>
+      <div class="entry-desc">Vrbovec, Hrvatska</div>
+    </div>
+    <div class="entry">
+      <div>
+        <div class="entry-title">Osnovna škola Dubrava</div>
+        <div class="entry-sub">Osnovna škola</div>
+      </div>
+      <div class="entry-date">2013 – 2021</div>
+      <div class="entry-desc">Dubrava, Hrvatska</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Iskustvo</div>
+    <div class="entry">
+      <div>
+        <div class="entry-title">Rukometni sudac</div>
+        <div class="entry-sub">Rukometni savez · Volontersko / honorarno</div>
+      </div>
+      <div class="entry-date">2023 – danas</div>
+      <div class="entry-desc">Suđenje rukometnih utakmica vikendom. Razvoj sposobnosti brzog i preciznog odlučivanja, komunikacije s igračima i organizacije pod stresom. Suradnja s parterskim sucem i delegatima utakmica.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Vještine</div>
+    <div class="skills-grid">
+      <span class="skill-badge">Microsoft Word</span>
+      <span class="skill-badge">Microsoft Excel</span>
+      <span class="skill-badge">Microsoft PowerPoint</span>
+      <span class="skill-badge">Canva</span>
+      <span class="skill-badge">Adobe Photoshop</span>
+      <span class="skill-badge">Osnove programiranja</span>
+      <span class="skill-badge">Organizacija ureda</span>
+      <span class="skill-badge">Timski rad</span>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="section">
+      <div class="section-title">Jezici</div>
+      <div class="lang-row">
+        <span class="lang-name">Hrvatski</span>
+        <div class="dots">
+          <div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div>
+        </div>
+      </div>
+      <div class="lang-row">
+        <span class="lang-name">Engleski</span>
+        <div class="dots">
+          <div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-title">Interesi</div>
+      <div class="skills-grid">
+        <span class="skill-badge">Rukomet</span>
+        <span class="skill-badge">Motociklizam</span>
+        <span class="skill-badge">Fitness</span>
+      </div>
+    </div>
+  </div>
+
+</div>
